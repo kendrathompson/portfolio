@@ -69,10 +69,12 @@ h1, h2, h3 {
 	font-family: 'Bree Serif', serif;
 	color: #346273;
 	margin: 2rem auto 1rem auto;
+	font-size: 2rem
 }
 
 h1, h2 {
 	font-weight: bold;
+	font-size: 3rem
 }
 
 .demo h2 {
@@ -185,7 +187,7 @@ footer a:hover, footer .col a:hover, .contact a:hover {
 	color: #000000;
 }
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 480px) {
 	body {
 		font-size: 1rem;
 	}
@@ -231,7 +233,7 @@ footer a:hover, footer .col a:hover, .contact a:hover {
 	}
 }
 
-@media only screen and (min-width: 80rem) {
+@media only screen and (min-width: 1025px) {
 	body {
 		font-size: 1.25rem;
 		line-height: 1.6;
