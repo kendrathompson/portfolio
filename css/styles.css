@@ -73,12 +73,12 @@ h1, h2, h3 {
 	font-family: 'Bree Serif', serif;
 	color: #346273;
 	margin: 2rem auto 1rem auto;
-	font-size: 2rem
+	font-size: 1.2rem
 }
 
 h1, h2 {
 	font-weight: bold;
-	font-size: 3rem
+	font-size: 1.5rem
 }
 
 .demo h2 {
