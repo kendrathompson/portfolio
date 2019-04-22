@@ -1,0 +1,37 @@
+const navItems = document.querySelectorAll("nav a");
+const container = document.querySelector(".container");
+
+let path = "http://localhost/mtm-1529/portfolio/partials/home.html";
+
+// handling clicking
+function handleClick(ev) {
+    
+    // prevetns link from redirecting
+    ev.preventDefault();
+    
+    // current url is collected:
+    path = ev.target.href;
+    
+    handleAjax(path);
+}
+
+// handling fetching data
+function handleAjax(urlValue) {
+    fetch(urlValue)
+        .then(function (rsp) {
+            return rsp.text();
+        })
+        .then(function (data) {
+            container.innerHTML = data;
+        })
+}
+
+handleAjax(path);
+
+navItems[0].addEventListener("click", handleClick);
+navItems[1].addEventListener("click", handleClick);
+navItems[2].addEventListener("click", handleClick);
+navItems[3].addEventListener("click", handleClick);
+navItems[4].addEventListener("click", handleClick);
+navItems[5].addEventListener("click", handleClick);
+
